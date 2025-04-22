@@ -72,7 +72,7 @@ function signup() {
     }
 
     function verifPassword() {
-        while (password.length < 7 || !/[@#\-+*/]/.test(password) || /\s/.test(password) || password !== passwordConfirmed) {
+        while (password.length < 7 || !/[@#\-+/]/.test(password) || /\s/.test(password) || password !== passwordConfirmed) {
             if (password !== passwordConfirmed) {
                 alert("Password does not match!")
             } else {
